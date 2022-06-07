@@ -116,3 +116,5 @@ const NiteClipboard = (function () {
 
     return Constructor;
 })();
+
+module.exports = NiteClipboard;
