@@ -36,3 +36,10 @@ const defaults = {
 ```
 
 Note: the "fallbackContainerSelector" setting is optional and mostly only needed to handle situations where you want to copy something to the clipboard while a bootstrap modal is opened.
+
+Example
+```
+niteClipboard.copyToClipboard('ok', {
+    fallbackContainerSelector: '#my-bootstrap-modal
+});
+```
