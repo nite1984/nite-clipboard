@@ -33,7 +33,7 @@ const niteClipboard = (function () {
         }
 
         if (!navigator.clipboard) {
-            fallbackCopyToClipboard(text);
+            fallbackCopyToClipboard(text, settings);
             return;
         }
         navigator.clipboard.writeText(text).then(function () {
@@ -54,7 +54,7 @@ const niteClipboard = (function () {
     }
 
     /**/
-    const fallbackCopyToClipboard = function (text) {
+    const fallbackCopyToClipboard = function (text, settings) {
 
         const textArea = document.createElement('textarea');
         textArea.value = text;
