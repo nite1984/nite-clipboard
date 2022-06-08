@@ -7,19 +7,20 @@ npm i @nite1984/nite-clipboard
 ```
 
 ```
-import NiteClipboard from '@nite1984/nite-clipboard';
+import niteClipboard from '@nite1984/nite-clipboard';
 
-window.NiteClipboard = NiteClipboard;
+window.niteClipboard = niteClipboard;
 ```
 
 # Example Usage
 
 ```
-const niteClipboard = new NiteClipboard({
-    logToConsole: true,
-});
-
 niteClipboard.copyToClipboard('ok');
+
+niteClipboard.copyToClipboard('ok', {
+    logToConsole: true
+    //see Available options for more
+});
 ```
 
 # Available Options
