@@ -1,6 +1,6 @@
 /**
  * niteClipboard
- * v1.0.1 2022/06/07
+ * v1.0.2 2022/06/09
  * https://github.com/nite1984/nite-clipboard
  * 
  * Released under the MIT License
@@ -19,11 +19,6 @@ const niteClipboard = (function () {
     const copyToClipboard = function (text, options) {
 
         const settings = Object.assign({}, defaults, options);
-        const fallbackContainerEl = document.querySelector(settings.fallbackContainerSelector);
-
-        if (!fallbackContainerEl) {
-            throw new Error('Invalid fallback container element');
-        }
 
         if (
             (settings.successCopyCallback !== null && typeof settings.successCopyCallback !== 'function') ||
@@ -55,6 +50,12 @@ const niteClipboard = (function () {
 
     /**/
     const fallbackCopyToClipboard = function (text, settings) {
+
+        const fallbackContainerEl = document.querySelector(settings.fallbackContainerSelector);
+
+        if (!fallbackContainerEl) {
+            throw new Error('Invalid fallback container element');
+        }
 
         const textArea = document.createElement('textarea');
         textArea.value = text;
