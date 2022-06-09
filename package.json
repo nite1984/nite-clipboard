@@ -1,6 +1,6 @@
 {
   "name": "@nite1984/nite-clipboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vanilla JS Copy to Clipboard",
   "main": "src/index.js",
   "scripts": {
