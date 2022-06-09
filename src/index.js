@@ -1,6 +1,6 @@
 /**
  * niteClipboard
- * v1.0.0 2022/06/07
+ * v1.0.1 2022/06/07
  * https://github.com/nite1984/nite-clipboard
  * 
  * Released under the MIT License
